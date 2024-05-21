@@ -67,4 +67,6 @@ while user_continue == "continue":
     else:
         print("Неправильный ввод")
     user_continue = input("Следующее действие (continue/exit): ")
-    print("\n=<3==========================\n")
+    if user_continue != "continue" and user_continue != "exit":
+        print("Команда не распознана. Программа завершена")
+    print("\n=\033[31m♡\033[0m==========================\n")
